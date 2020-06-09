@@ -119,10 +119,7 @@ app.use('/public', express.static(__dirname + '/public'))
 
     .get('/NewAccount/', async (req, res) => {
         const info = await  web3.eth.accounts.create();
-        console.log(info);
-        console.log(info);
-        console.log(info["address"]);
-        res.render('NewAccountInfo.ejs', {info:info});
+        res.render('NewAccountInfo.ejs', {info:info})
     })
 
     /* On redirige vers home si la page demandée n'est pas trouvée */

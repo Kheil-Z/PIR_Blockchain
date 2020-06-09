@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<p> Transaction from : <% r["sender"] %></p>
+<p> Transaction from : <%= r["sender"] %></p>
 <br>
 <p> to : <% r["receiver"] %></p>
 <br>
@@ -17,9 +17,9 @@
 <br>
 <p> has been made, here is your receipt:</p>
 <br>
-<p> blockhash : <% r['blockHash'] %></p>
+<p> blockhash : <%= r['blockHash'] %></p>
 <br>
-<p> blockNumber : <%r["blockNumber"]%></p>
+<p> blockNumber : <%=r["blockNumber"]%></p>
 <br>
 <p> cumulative Gas used : <%r["cumulativeGasUsed"]%></p>
 <br>
